@@ -8,11 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -20,14 +16,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
-      - run: yarn
+      - uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - run: yarn install
       - name: Build
         run: yarn run docs:build
-      - uses: actions/configure-pages@v2
-      - uses: actions/upload-pages-artifact@v1
-        with:
-          path: docs/.vitepress/dist
       - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
