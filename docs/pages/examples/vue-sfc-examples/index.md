@@ -1,5 +1,5 @@
 ---
-hello: world
+outline: deep
 ---
 
 # Vue SFC Examples
@@ -9,7 +9,7 @@ hello: world
 <script setup>
 import { ref } from 'vue'
 import { useData } from 'vitepress'
-import CustomComponent from '../../components/CustomComponent.vue'
+import CustomComponent from '/components/CustomComponent.vue'
 
 const count = ref(0)
 
@@ -78,7 +78,7 @@ The count is: {{ count }}
 ## Custom Component
 
 ```js
-import CustomComponent from '../components/CustomComponent.vue'
+import CustomComponent from '/components/CustomComponent.vue'
 ```
 
 ```html

@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Data Examples
 
 ## Show content with real data
@@ -21,7 +25,7 @@
 ```vue
 <script setup>
 import { ref } from 'vue'
-import { data } from '../../data/githubEvents/events.data.ts'
+import { data } from '/data/githubEvents/events.data.ts'
 const items = ref([])
 
 const { isMock, data: res } = data;
@@ -59,7 +63,7 @@ items.value = res.map(item => ({
 </style>
 ```
 
-### Content
+### render content
 
 <div class="data-example" v-if="items.length > 0">
   <div v-for="item of items" :key="item.id">
@@ -73,7 +77,7 @@ items.value = res.map(item => ({
 
 <script setup>
 import { ref } from 'vue'
-import { data } from '../../data/githubEvents/events.data.ts'
+import { data } from '/data/githubEvents/events.data.ts'
 const items = ref([])
 
 const { isMock, data: res } = data;
@@ -107,6 +111,6 @@ items.value = res.map(item => ({
 }
 </style>
 
-### Original Data
+### original data
 
 <pre>{{ data }}</pre>

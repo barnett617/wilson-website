@@ -8,17 +8,11 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: alt
-      text: Markdown Examples
-      link: /pages/markdown-examples/
+      text: VitePress Examples
+      link: /pages/examples/markdown-examples/
     - theme: alt
-      text: API Examples
-      link: /pages/api-examples/
-    - theme: alt
-      text: Vue SFC Examples
-      link: /pages/vue-sfc-examples/
-    - theme: alt
-      text: Data Examples
-      link: /pages/data-examples/
+      text: Vue Learning
+      link: /pages/vue-learning/vue2/lifecycle/parent_children/
 
 features:
   - title: Feature A
