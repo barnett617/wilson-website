@@ -22,7 +22,16 @@ export default defineConfig({
             link: '/pages/vue-learning/vue2/lifecycle/parent_children/',
           },
         ]
-      }
+      },
+      {
+        text: 'Frontend',
+        items: [
+          {
+            text: 'CSS',
+            link: '/pages/frontend/css/tiktok_logo/',
+          },
+        ],
+      },
     ],
 
     sidebar: {
@@ -59,6 +68,17 @@ export default defineConfig({
           items: [],
         }
       ],
+      'pages/frontend/css/': [
+        {
+          text: 'css',
+          items: [
+            {
+              text: '抖音LOGO实现',
+              link: '/pages/frontend/css/tiktok_logo/',
+            },
+          ],
+        },
+      ]
     },
 
     socialLinks: [
