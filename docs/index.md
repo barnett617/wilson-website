@@ -4,22 +4,22 @@ layout: home
 
 hero:
   name: "Wilson Website"
-  text: "A static website based on vitepress"
+  text: "A static website based on VitePress"
   tagline: My great project tagline
   actions:
     - theme: alt
-      text: VitePress Examples
-      link: /pages/examples/markdown-examples/
+      text: Frontend Points
+      link: /pages/frontend/js/array/reduce/
     - theme: alt
       text: Vue Learning
       link: /pages/vue-learning/vue2/lifecycle/parent_children/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Fast
+    details: Build with Vite
+  - title: Simple
+    details: Based on Markdown
+  - title: Flexible
+    details: Support Vue3 Programming
 ---
 
