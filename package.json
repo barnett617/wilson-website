@@ -1,4 +1,10 @@
 {
+  "name": "wilson-website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barnett617/wilson-website.git"
+  },
+  "homepage": "https://barnett617.github.io/wilson-website/",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
